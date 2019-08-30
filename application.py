@@ -1,4 +1,5 @@
-# lines of code 2-43, 67-70, 126-129, 136-187, 210-212, 298-301, 365-372, were provided by cs50 and not written by me.
+# lines of code 3-47, 71-74, 126-129, 140-191, 214-216, 302-305, 369-377 were provided by cs50 and not written by me.
+
 import os
 
 from cs50 import SQL
@@ -36,6 +37,9 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///finance.db")
 
+# Make sure API key is set
+if not os.environ.get("API_KEY"):
+    raise RuntimeError("API_KEY not set")
 
 @app.route("/")
 @login_required
