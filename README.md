@@ -1,8 +1,8 @@
-## CS50 - Finance
+# CS50 - Finance
 My work for CS50's Finance assignment.
 Some of the code was already provided by CS50 - lines of code that were not written by me are specified in a comment at the top of each file.
 
-## Getting Started
+# Getting Started
 
 Install Flask and activate environment. 
 Install requirements.txt by executing the below into the console within the project folder:
