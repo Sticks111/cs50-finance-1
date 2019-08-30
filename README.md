@@ -1,5 +1,8 @@
 # CS50 - Finance
 My work for CS50's Finance assignment.
+
+A stock-trading website.
+
 Some of the code was already provided by CS50 - lines of code that were not written by me are specified in a comment at the top of each file.
 
 # Getting Started
