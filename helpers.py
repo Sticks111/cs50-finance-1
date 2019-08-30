@@ -1,4 +1,6 @@
 # python file provided by cs50, I did not write any of this code.
+
+import os
 import requests
 import urllib.parse
 
@@ -25,7 +27,7 @@ def login_required(f):
     """
     Decorate routes to require login.
 
-    http://flask.pocoo.org/docs/0.12/patterns/viewdecorators/
+    http://flask.pocoo.org/docs/1.0/patterns/viewdecorators/
     """
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -40,7 +42,8 @@ def lookup(symbol):
 
     # Contact API
     try:
-        response = requests.get(f"https://api.iextrading.com/1.0/stock/{urllib.parse.quote_plus(symbol)}/quote")
+        api_key = os.environ.get("API_KEY")
+        response = requests.get(f"https://cloud-sse.iexapis.com/stable/stock/{urllib.parse.quote_plus(symbol)}/quote?token={api_key}")
         response.raise_for_status()
     except requests.RequestException:
         return None
