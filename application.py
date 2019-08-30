@@ -1,3 +1,4 @@
+# lines of code 2-43, 67-70, 126-129, 136-187, 210-212, 298-301, 365-372, were provided by cs50 and not written by me.
 import os
 
 from cs50 import SQL
@@ -6,7 +7,6 @@ from flask_session import Session
 from tempfile import mkdtemp
 from werkzeug.exceptions import default_exceptions
 from werkzeug.security import check_password_hash, generate_password_hash
-
 
 from helpers import apology, login_required, lookup, usd
 
@@ -17,15 +17,12 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Ensure responses aren't cached
-
-
 @app.after_request
 def after_request(response):
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
     response.headers["Expires"] = 0
     response.headers["Pragma"] = "no-cache"
     return response
-
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd
