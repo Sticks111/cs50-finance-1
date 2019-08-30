@@ -4,7 +4,8 @@ Some of the code was already provided by CS50 - lines of code that were not writ
 
 ## Getting Started
 
-Install Flask and install requirements.txt by executing the below into the console:
+Install Flask and activate environment. 
+Install requirements.txt by executing the below into the console within the project folder:
 
 ```
 pip install -r requirements.txt
