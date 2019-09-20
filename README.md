@@ -1,9 +1,17 @@
 # CS50 - Finance
 My work for HarvardX CS50's Finance assignment.
 
-A mock stock-trading website.
+A mock stock-trading website where a user can register, login, change passwords, buy and sell stocks, and see their transaction history.
 
-Some of the code was already provided by CS50 - lines of code that were not written by me are specified in a comment at the top of each file.
+All of the code I wrote in Python is in **application.py**, some of the code in that file was provided by CS50 - lines of code that were not written by me are specified in a comment at the top of the file. Additionally, I wrote all the HTML files inside of templates/ except the files mentioned below.
+
+The following files were provided by CS50 - I did not write any of the code in the below files:
+* helpers.py
+* templates/login.html
+* templates/layout.html
+* templates/apology.html
+* static/styles.css
+* requirements.txt
 
 # Getting Started
 
