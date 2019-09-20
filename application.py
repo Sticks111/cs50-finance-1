@@ -1,4 +1,5 @@
-# lines of code 3-47, 71-74, 126-129, 140-191, 214-216, 302-305, 369-377 were provided by cs50 and not written by me.
+# lines of code 3-47, 140-191, 369-377 were provided by cs50 and not written by me.
+# I wrote the following functions: index(), buy(), history(), quote(), register(), sell(), and changepassword()
 
 import os
 
