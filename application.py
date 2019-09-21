@@ -1,5 +1,5 @@
 # lines of code 3-47, 140-191, 369-377 were provided by cs50 and not written by me.
-# I wrote the following functions: index(), buy(), history(), quote(), register(), sell(), and changepassword()
+# I wrote the following routes: index, buy, history, quote, register, sell, and changepassword
 
 import os
 
